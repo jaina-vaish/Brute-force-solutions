@@ -7,11 +7,12 @@ class Solution {
             map.put(heights[i],str);
         }
         int ind=0;
+        String res[] = new String[names.length];
         for(Integer x:map.keySet())
         {
-            names[ind++] = map.get(x);
+            res[ind++] = map.get(x);
 
         }
-        return names;
+        return res;
     }
 }
