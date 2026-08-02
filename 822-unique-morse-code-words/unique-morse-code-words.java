@@ -28,7 +28,7 @@ mp.put('x', "-..-");
 mp.put('y', "-.--");
 mp.put('z', "--..");
 
-
+    HashSet<String> set = new HashSet<>();
     for(int i=0;i<words.length;i++)
     {
         String str = words[i];
@@ -39,12 +39,13 @@ mp.put('z', "--..");
             res+=mp.get(ch);
         }
         words[i] = res;
+         set.add(words[i]);
     }
-    HashSet<String> set = new HashSet<>();
-    for(int i=0;i<words.length;i++)
-    {
-       set.add(words[i]);
-    }
+    
+    // for(int i=0;i<words.length;i++)
+    // {
+    //    set.add(words[i]);
+    // }
     return set.size();
     }
 }
