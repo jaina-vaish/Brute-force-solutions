@@ -38,14 +38,11 @@ mp.put('z', "--..");
             char ch = str.charAt(j);
             res+=mp.get(ch);
         }
-        words[i] = res;
-         set.add(words[i]);
+      //  words[i] = res;
+         set.add(res);
     }
     
-    // for(int i=0;i<words.length;i++)
-    // {
-    //    set.add(words[i]);
-    // }
+   
     return set.size();
     }
 }
