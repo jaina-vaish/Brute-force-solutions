@@ -21,7 +21,7 @@ class Solution {
             s='0'+s;
         }
     }
-        for(int i=0;i<Math.max(s.length(),e.length());i++)
+        for(int i=0;i<s.length();i++)
         {
             char ch = s.charAt(i);
             char ch1 = e.charAt(i);
