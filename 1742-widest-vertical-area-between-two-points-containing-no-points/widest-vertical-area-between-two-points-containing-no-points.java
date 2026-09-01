@@ -5,14 +5,7 @@ class Solution {
         ArrayList<Integer> list= new ArrayList<>();
         for(int i=0;i<points.length;i++)
         {
-            for(int j=0;j<points[i].length;j++)
-            {
-                c++;
-                if(c%2==1)
-                {
-                    list.add(points[i][j]);
-                }
-            }
+            list.add(points[i][0]);
         }
         Collections.sort(list);
         for(int i=0;i<list.size()-1;i++)
